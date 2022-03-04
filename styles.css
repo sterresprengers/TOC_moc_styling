@@ -1,0 +1,68 @@
+/* Default in article / guide template */
+
+body {
+    background-color: #fff2ec;
+    font-family: Georgia, serif;
+    line-height: 2;
+    /* body font */
+}
+main {
+    max-width: 920px; /* article template width */
+    margin: 60px;
+    /* font-family: 'bree-regular';
+    src: url('/font-bree/bree-regular.woff') format('woff'), url('/font-bree/bree-regular.woff2') format('woff2'); */
+}
+h2 {
+    /* font-family: Bree; */
+    color: #3e8276;
+}
+
+
+/* Table of Content specifics */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc-container {
+    display: flex;
+    justify-content: space-between;
+}
+.toc-item--number {
+    color: #3e8276;
+    font-size: 1.6rem;
+    font-weight: bold;
+    align-self: center;
+    padding-right: 1.4rem;
+}
+.toc-item--content {
+    /* flex-direction: row; */
+    flex-grow: 2;
+    border-bottom: 1px solid #3e8276;
+    padding: 2.5rem 0rem;
+}
+
+.toc-item--header {
+    font-weight: bold;
+}
+.toc-item--subheader {
+    font-style: italic;
+}
+.toc-item--arrow {
+    align-self: center;
+    border: solid #3e8276;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 9px;
+    transform: rotate(-45deg);
+}
+
+
+/* To do list 
+- implement font Bree
+- Border under arrow
+- no border-bottom last-child
+
+*/
